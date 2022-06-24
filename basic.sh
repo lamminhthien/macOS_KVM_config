@@ -8,7 +8,7 @@ OVMF=$VMDIR/firmware
 
 qemu-system-x86_64 \
     -enable-kvm \
-    -m 7G \
+    -m 4G \
     -machine q35,accel=kvm \
     -smp 8,cores=8 \
     -cpu Penryn,vendor=GenuineIntel,kvm=on,+sse3,+sse4.2,+aes,+xsave,+avx,+xsaveopt,+xsavec,+xgetbv1,+avx2,+bmi2,+smep,+bmi1,+fma,+movbe,+invtsc \
